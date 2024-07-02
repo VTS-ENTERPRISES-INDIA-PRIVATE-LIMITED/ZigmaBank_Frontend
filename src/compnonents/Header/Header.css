@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:7px 40px;
+}
+
+.header h1 {
+  margin: 0;
+}

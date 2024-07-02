@@ -1,0 +1,28 @@
+.stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  width: 100vw;
+  overflow-x:hidden;
+}
+
+.stats .stats-counter .stats-item {
+  padding: 20px 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.stats .stats-counter .stats-item .counter {
+  min-width: 90px;
+  font-size: 40px;
+  display: block;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 40px;
+}
+
+.stats .stats-counter .stats-item p {
+  margin: 0 ;
+  font-family: var(--font-primary);
+  font-size: 14px;
+}

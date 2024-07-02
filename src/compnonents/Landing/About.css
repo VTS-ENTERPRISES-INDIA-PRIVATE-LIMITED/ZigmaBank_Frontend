@@ -1,0 +1,79 @@
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 35px;
+    flex-wrap: wrap; 
+    gap: 20px;
+    box-sizing: border-box; 
+}
+
+.about .about-left {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    text-align: center; 
+}
+
+.about .about-left .about-content p {
+    padding: 10px;
+}
+
+.about .about-right {
+    flex: 1; /* Take up remaining space */
+    display: flex;
+    justify-content: center; /* Center align content */
+    align-items: center;
+    height: 100%;
+}
+
+.about .about-right img {
+    width: 100%; /* Initially full width */
+    max-width: 100%; /* Ensure image does not exceed its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10%; /* Optional: Round the image */
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .about .about-left, 
+    .about .about-right {
+        text-align: left;
+        width: 100%; /* Full width on mobile */
+    }
+
+    .about .about-right {
+        justify-content: flex-end; /* Align content to the right on mobile */
+    }
+
+    .about .about-right img {
+        width: 100%;
+        padding: 30% 0 30% 0; /* Set image width to 60% on mobile */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for tablets */
+    .about {
+        padding: 15px; /* Adjust padding for tablets */
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Styles for desktop */
+    .about {
+        padding: 20px; /* Default padding for desktop */
+    }
+}
